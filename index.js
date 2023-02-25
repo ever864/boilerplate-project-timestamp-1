@@ -41,7 +41,7 @@ app.get("/api/:date?", (req, res) => {
 
   // Si la fecha es inválida, devuelve una respuesta de error
   if (isNaN(fecha.getTime())) {
-    res.json({ error: "Fecha inválida" });
+    res.json({ error: "Invalid Date" });
     return;
   }
 
